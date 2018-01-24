@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'brush';
+  src: url("../fonts/Brush.woff") format("woff");
+
+}
+body{
+  background-image: url("../img/felt2.jpg");
+  overflow: hidden;
+}
+#background_cardboard{
+  width: 112vmax;
+  height: 140vmax;
+  position: absolute;
+  top: -17vmax;
+  left: -5vmax;
+  transform: rotate(170deg);
+  z-index: -999999;
+  user-select: none;
+}
+#main_text{
+  font-family: Brush;
+  font-size: 16.5vmax;
+  opacity: 0.7;
+  padding-top: 3vmax;
+  padding-left: 6vmax;
+  transform: rotate(-8.6deg);
+  white-space: nowrap;
+}
+.external_link{
+  width: 4vmax;
+  height: inherit;
+  position: relative;
+  opacity: 0.7;
+  left: 1vmax;
+  transition-duration: 0.5s;
+  padding-left: 1vmax;
+}
+@keyframes slideIn {
+  0% {
+    top: 130vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+#main_sheet{
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 1.7s;
+  animation-timing-function: cubic-bezier(.53,1,.75,.94);
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+#more_links{
+  transform: rotate(-8.6deg);
+  position: relative;
+  top: -7vmax;
+  left: 5.2vmax;
+}
+
+.external_link:hover{
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: rotate(8.6deg);
+}
+#warning_symbols{
+  transform: rotate(-8.6deg);
+  position: relative;
+  left: -7vmax;
+  bottom: -15vmax;
+}
+.warning_symbol{
+  width: 15vmax;
+  height: inherit;
+  position: relative;
+  float: right;
+  padding-left: 0.5vmax;
+}
+#github_logo{
+  opacity: 0.85;
+}
