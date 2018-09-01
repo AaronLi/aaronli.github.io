@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'brush';
+  src: url("../fonts/Brush.woff") format("woff");
+
+}
+body{
+  background-image: url("../img/felt2.jpg");
+  overflow: hidden;
+}
+
+#ipad_contents{
+  position: relative;
+  left: 106px;
+  top: 209px;
+  width:1374px;
+  height:1833px;
+  background:#222;
+  float: left;
+  color: #222;
+  padding-left: 2%;
+  padding-top: 2%;
+  animation-name: showScreen;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+#background_ipad{
+  position: fixed;
+}
+#ipad{
+  position: relative;
+  animation-name: slideIpad;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  width: 1586px;
+  height: 2249px;
+  margin: auto;
+}
+@keyframes slideIpad {
+    0%{
+      top: 110vh;
+    }
+    70%{
+      top:0;
+      transform: scale(1);
+    }
+    100%{
+      top:15.5vh;
+      transform: scale(1.4);
+    }
+}
+@keyframes showScreen{
+  0%{
+    color: #222;
+  }
+  100%{
+    color: #fff;
+  }
+}
