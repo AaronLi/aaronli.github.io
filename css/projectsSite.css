@@ -5,56 +5,116 @@
 }
 body{
   background-image: url("../img/felt2.jpg");
-  overflow: hidden;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 #ipad_contents{
-  position: relative;
-  left: 106px;
-  top: 209px;
-  width:1374px;
-  height:1833px;
-  background:#222;
-  float: left;
-  color: #222;
-  padding-left: 2%;
-  padding-top: 2%;
-  animation-name: showScreen;
-  animation-duration: 0.7s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+    position: relative;
+    top: -2045px;
+    left: 105px;
+    width: 1376px;
+    height: 1837px;
+    background-color: #222;
+    color: #fff;
+    padding-left: 2%;
+    padding-top: 2%;
+    z-index: -1;
+    animation-delay: 2.2s;
+    animation-duration: 0.7s;
+    animation-name: turnOnScreen;
+    animation-fill-mode: forwards;
 }
 #background_ipad{
-  position: fixed;
+
 }
 #ipad{
-  position: relative;
-  animation-name: slideIpad;
-  animation-duration: 1.4s;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-  width: 1586px;
-  height: 2249px;
-  margin: auto;
+    display: inline-block;
+    position: relative;
+    padding-bottom: -100%;
+    z-index: 0;
+    animation-name: slideIpad;
+    animation-fill-mode: forwards;
+    animation-duration: 2.4s;
+    animation-delay: 0.2s;
 }
-@keyframes slideIpad {
+#project_app{
+    text-align: left;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    z-index: 1;
+    color: white;
+    animation-name: switchToProjectApp;
+    animation-delay: 2.6s;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+#project_nav_bar{
+    width: 11vw;
+    position: fixed;
+    height: 100vh;
+    background-color: #0f0;
+    text-align: center;
+}
+#project_cards{
+    position: relative;
+    left: 11vw;
+    width: 89vw;
+    overflow-y: scroll;
+    height: inherit;
+}
+.fullPageProject{
+    height: 100vh;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
+#name_plate{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4vmin;
+    color: #432;
+    height: 2vh;
+}
+#nav_bar_element{
+
+}
+@keyframes slideIpad{
     0%{
-      top: 110vh;
+        top: 110vh;
+    }
+    30% {
+        top: 0vh;
     }
     70%{
-      top:0;
-      transform: scale(1);
+        transform: scale(1,1);
+    }
+    80%{
+        transform: scale(1.4,1.4);
     }
     100%{
-      top:15.5vh;
-      transform: scale(1.4);
+        transform: scale(1.4,1.4);
+        visibility: hidden;
     }
 }
-@keyframes showScreen{
-  0%{
-    color: #222;
-  }
-  100%{
-    color: #fff;
-  }
+@keyframes turnOnScreen{
+    0%{
+        background-color: #222;
+    }
+    100%{
+        background-color: #333;
+    }
+}
+@keyframes switchToProjectApp{
+    0%{
+        visibility: hidden
+    }
+    100%{
+        visibility: visible;
+    }
 }
