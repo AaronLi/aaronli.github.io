@@ -1,0 +1,188 @@
+:root{
+  --red_radius: 160vh;
+  --orange_radius: 140vh;
+  --yellow_radius: 110vh;
+  --white_radius: 70vh;
+}
+body{
+  background-color: #003049;
+  overflow: hidden;
+}
+#dot{
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 50%;
+  left: calc(50vw - 2.5vw);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #EAE2B7;
+  animation-name: bounce_drop;
+  animation-duration: 1.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+    box-shadow: 0 0 10vw #EAE2B7;
+}
+#red_ring{
+  position: absolute;
+  border-radius: 50%;
+  width: var(--red_radius);
+  height: var(--red_radius);
+  left: calc(50vw - var(--red_radius)/2);
+  top: calc(100vh - var(--red_radius)/2);
+  background-color: #D62828;
+  animation-name: grow_red;
+  animation-duration: 1s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  box-shadow: 0 0 5vw #D62828;
+  transition-duration: 0.5s;
+}
+
+#red_ring:hover{
+  transition-duration: 0.5s;
+  background-color: #E73939;
+  box-shadow: 0 0 5vw #E73939;
+}
+
+#orange_ring{
+  position: absolute;
+  left: calc(50vw - var(--orange_radius)/2);
+  top: calc(100vh - var(--orange_radius)/2);
+  border-radius: 50%;
+  width: var(--orange_radius);
+  height: var(--orange_radius);
+  background-color: #F77F00;
+  animation-name: grow_orange;
+  animation-duration: 1s;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  box-shadow: 0 0 5vw #F77F00;
+  transition-duration: 0.5s;
+}
+#orange_ring:hover{
+  transition-duration: 0.5s;
+  background-color: #FF8F11;
+  box-shadow: 0 0 5vw #FF8F11;
+}
+
+#yellow_ring{
+  position: absolute;
+  border-radius: 50%;
+  width: var(--yellow_radius);
+  height: var(--yellow_radius);
+  left: calc(50vw - var(--yellow_radius)/2);
+  top: calc(100vh - var(--yellow_radius)/2);
+  background-color: #FCBF49;
+  animation-name: grow_yellow;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  box-shadow: 0 0 5vw #FCBF49;
+  transition-duration: 0.5s;
+}
+#yellow_ring:hover{
+  transition-duration: 0.5s;
+  background-color: #FFCF5A;
+  box-shadow: 0 0 5vw #FFCF5A;
+}
+#white_ring{
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  width: var(--white_radius);
+  height: var(--white_radius);
+  left: calc(50vw - var(--white_radius)/2);
+  top: calc(100vh - var(--white_radius)/2);
+  background-color: #EAE2B7;
+  animation-name: grow_white;
+  animation-duration: 1s;
+  animation-delay: 1.1s;
+  animation-fill-mode: both;
+  box-shadow: 0 0 5vw #EAE2B7;
+  animation-timing-function: ease-out;
+  transition-duration: 0.5s;
+}
+#white_ring:hover{
+  transition-duration: 0.5s;
+  background-color: #FBF3C8;
+  box-shadow: 0 0 5vw #FBF3C8;
+}
+#github_logo{
+  position: relative;
+  opacity: 0.2;
+  width: 8vh;
+  height: 8vh;
+}
+@keyframes bounce_drop {
+  0%{
+    top: 50%;
+  }
+  40%{
+    top: 30%;
+  }
+  100%{
+    top: 105%;
+  }
+}
+@keyframes grow_white {
+  0%{
+    width: 0;
+    height: 0;
+    left: 50vw;
+    top: 100vh;
+  }
+  100%{
+    width: var(--white_radius);
+    height: var(--white_radius);
+    left: calc(50vw - var(--white_radius)/2);
+    top: calc(100vh - var(--white_radius)/2);
+  }
+}
+@keyframes grow_red {
+  0%{
+    width: 0;
+    height: 0;
+    left: 50vw;
+    top: 100vh;
+  }
+  100%{
+    width: var(--red_radius);
+    height: var(--red_radius);
+    left: calc(50vw - var(--red_radius)/2);
+    top: calc(100vh - var(--red_radius)/2);
+  }
+}
+@keyframes grow_orange {
+  0%{
+    width: 0;
+    height: 0;
+    left: 50vw;
+    top: 100vh;
+  }
+  100%{
+    width: var(--orange_radius);
+    height: var(--orange_radius);
+    left: calc(50vw - var(--orange_radius)/2);
+    top: calc(100vh - var(--orange_radius)/2);
+  }
+}
+@keyframes grow_yellow {
+  0%{
+    width: 0;
+    height: 0;
+    left: 50vw;
+    top: 100vh;
+  }
+  100%{
+    width: var(--yellow_radius);
+    height: var(--yellow_radius);
+    left: calc(50vw - var(--yellow_radius)/2);
+    top: calc(100vh - var(--yellow_radius)/2);
+  }
+}
