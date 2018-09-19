@@ -121,8 +121,8 @@ body{
 .logo{
   position: relative;
   opacity: 0.3;
-  width: 7vmin;
-  height: 7vmin;
+  width: 7vh;
+  height: 7vh;
 }
 @keyframes bounce_drop {
   0%{
@@ -133,6 +133,7 @@ body{
   }
   100%{
     top: 105%;
+    opacity: 0;
   }
 }
 @keyframes grow_white {
