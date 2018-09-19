@@ -66,8 +66,8 @@ body{
 }
 #orange_ring:hover{
   transition-duration: 0.5s;
-  background-color: #FF8F11;
-  box-shadow: 0 0 7vw #FF8F11;
+  background-color: #FF8F31;
+  box-shadow: 0 0 7vw #FF8F31;
 }
 
 #yellow_ring{
