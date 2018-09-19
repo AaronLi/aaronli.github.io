@@ -10,10 +10,10 @@ body{
 }
 #dot{
   position: absolute;
-  width: 5vw;
-  height: 5vw;
+  width: 5vh;
+  height: 5vh;
   top: 50%;
-  left: calc(50vw - 2.5vw);
+  left: calc(50vw - 2.5vh);
   border-radius: 50%;
   transform: translateY(-50%);
   background-color: #EAE2B7;
