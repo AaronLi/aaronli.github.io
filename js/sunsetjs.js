@@ -24,25 +24,6 @@ function place_logo(logo_id, parent_ring, inner_ring){
   y_position = circle_radius*Math.sin(angle);
   logo.style.top = (circle_radius-y_position).toString()+"px";
 }
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
-
-function getHeight() {
-  return Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.documentElement.clientHeight
-  );
-}
 
 function place_logos(){
     place_logo("projects_page", "red", "orange");

@@ -40,6 +40,7 @@ body{
   animation-timing-function: ease-out;
   box-shadow: 0 0 5vw #D62828;
   transition-duration: 0.5s;
+
 }
 
 #red_ring:hover{
@@ -109,6 +110,7 @@ body{
     text-align: center;
     font-size: 10vh;
     line-height: var(--white_radius);
+  z-index: 2;
 }
 #name_tag{
     font-family: 'Quicksand', sans-serif;
