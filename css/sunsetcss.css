@@ -109,6 +109,7 @@ body{
     text-align: center;
     font-size: 10vh;
     line-height: var(--white_radius);
+  pointer-events: none;
 }
 #name_tag{
     font-family: 'Quicksand', sans-serif;
