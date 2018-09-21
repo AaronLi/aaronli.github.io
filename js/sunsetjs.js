@@ -20,7 +20,7 @@ function place_logo(logo_id, parent_ring, inner_ring){
   logo.style.left = (x_position).toString()+"px";
 
   //Placing logo in proper y position
-  var angle = Math.acos((circle_radius-x_position)/circle_radius);
+  var angle = Math.acos((circle_radius-x_position)/circle_radius); // cos is x/r where x is distance from the center of the circle
   y_position = circle_radius*Math.sin(angle);
   logo.style.top = (circle_radius-y_position).toString()+"px";
 }
