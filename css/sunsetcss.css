@@ -114,6 +114,7 @@ body{
 }
 #name_tag{
     font-family: 'Quicksand', sans-serif;
+    font-display: swap;
     display: inline;
     position: relative;
     bottom: 15vh;
