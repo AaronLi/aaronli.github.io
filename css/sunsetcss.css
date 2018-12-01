@@ -10,10 +10,10 @@ body{
 }
 #dot{
   position: absolute;
-  width: 5vw;
-  height: 5vw;
+  width: 5vh;
+  height: 5vh;
   top: 50%;
-  left: calc(50vw - 2.5vw);
+  left: calc(50vw - 2.5vh);
   border-radius: 50%;
   transform: translateY(-50%);
   background-color: #EAE2B7;
@@ -40,6 +40,7 @@ body{
   animation-timing-function: ease-out;
   box-shadow: 0 0 5vw #D62828;
   transition-duration: 0.5s;
+
 }
 
 #red_ring:hover{
@@ -66,8 +67,8 @@ body{
 }
 #orange_ring:hover{
   transition-duration: 0.5s;
-  background-color: #FF8F11;
-  box-shadow: 0 0 7vw #FF8F11;
+  background-color: #FF8F31;
+  box-shadow: 0 0 7vw #FF8F31;
 }
 
 #yellow_ring{
@@ -109,10 +110,11 @@ body{
     text-align: center;
     font-size: 10vh;
     line-height: var(--white_radius);
-  pointer-events: none;
+  z-index: 2;
 }
 #name_tag{
     font-family: 'Quicksand', sans-serif;
+    font-display: swap;
     display: inline;
     position: relative;
     bottom: 15vh;
@@ -121,8 +123,8 @@ body{
 .logo{
   position: relative;
   opacity: 0.3;
-  width: 7vmin;
-  height: 7vmin;
+  width: 7vh;
+  height: 7vh;
 }
 @keyframes bounce_drop {
   0%{
@@ -131,8 +133,12 @@ body{
   40%{
     top: 30%;
   }
+  50%{
+    opacity: 1;
+  }
   100%{
     top: 105%;
+    opacity: 0;
   }
 }
 @keyframes grow_white {
