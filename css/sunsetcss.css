@@ -9,7 +9,7 @@ body{
   overflow: hidden;
 }
 #dot{
-  position: absolute;
+  position: fixed;
   width: 5vh;
   height: 5vh;
   top: 50%;
@@ -26,7 +26,7 @@ body{
     box-shadow: 0 0 10vw #EAE2B7;
 }
 #red_ring{
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   width: var(--red_radius);
   height: var(--red_radius);
@@ -50,7 +50,7 @@ body{
 }
 
 #orange_ring{
-  position: absolute;
+  position: fixed;
   left: calc(50vw - var(--orange_radius)/2);
   top: calc(100vh - var(--orange_radius)/2);
   border-radius: 50%;
@@ -72,7 +72,7 @@ body{
 }
 
 #yellow_ring{
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   width: var(--yellow_radius);
   height: var(--yellow_radius);
@@ -93,7 +93,7 @@ body{
   box-shadow: 0 0 7vw #FFCF5A;
 }
 #white_ring{
-  position: absolute;
+  position: fixed;
   margin: auto;
   border-radius: 50%;
   width: var(--white_radius);
