@@ -25,4 +25,4 @@ smb_mount=${smb_mount:-/mnt$smb_share}
 
 echo Creating drvfs share $smb_ip$smb_share mounted at $smb_mount
 
-mkdir $smb_mount && mount -t drvfs $smb_ip$smb_share $smb_mount
+mkdir -p $smb_mount && mount -t drvfs $smb_ip$smb_share $smb_mount
